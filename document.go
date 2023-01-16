@@ -80,7 +80,7 @@ func (doc *Document) writeTempPages() error {
 			continue
 		}
 
-		pg.filename = fmt.Sprintf("%v-page%08d.html", doc.tmp, n)
+		pg.filename = fmt.Sprintf("%v/%v-page%08d.html", os.TempDir(), doc.tmp, n)
 		err := ioutil.WriteFile(pg.filename, pg.buf.Bytes(), 0666)
 		if err != nil {
 			return fmt.Errorf("error writing temp file %v: %v", pg.filename, err)
