@@ -10,7 +10,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/andrewcharlton/wkhtmltopdf-go"
+
+	"github.com/mnugter/wkhtmltopdf-go"
 )
 
 const page = `

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/andrewcharlton/wkhtmltopdf-go"
+	"github.com/mnugter/wkhtmltopdf-go"
 )
 
 func TestWriteToFile(t *testing.T) {
